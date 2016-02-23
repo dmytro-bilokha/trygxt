@@ -6,6 +6,7 @@ import com.google.gwt.user.client.ui.RootPanel;
 import com.sencha.gxt.core.client.Style.LayoutRegion;
 import com.sencha.gxt.core.client.util.Margins;
 import com.sencha.gxt.widget.core.client.ContentPanel;
+import com.sencha.gxt.widget.core.client.button.TextButton;
 import com.sencha.gxt.widget.core.client.container.BorderLayoutContainer;
 import com.sencha.gxt.widget.core.client.container.BorderLayoutContainer.BorderLayoutData;
 import com.sencha.gxt.widget.core.client.container.Viewport;
@@ -29,8 +30,10 @@ public class ProjectEntryPoint implements EntryPoint {
 	    con.setNorthWidget(cp, d);
 
 	    cp = new ContentPanel();
-	    cp.setHeadingText("West");
+	    cp.setHeadingText("Navigator");
 	    cp.add(new Label("West Content"));
+	    TextButton textButton = new TextButton("Button1");
+	    cp.add(textButton);
 	    d = new BorderLayoutData(.20);
 	    d.setMargins(new Margins(0, 5, 5, 5));
 	    d.setCollapsible(true);
@@ -39,7 +42,7 @@ public class ProjectEntryPoint implements EntryPoint {
 	    con.setWestWidget(cp, d);
 
 	    cp = new ContentPanel();
-	    cp.setHeadingText("Center");
+	    cp.setHeadingText("Map");
 	    cp.add(new Label("Center Content"));
 	    d = new BorderLayoutData();
 	    d.setMargins(new Margins(0, 5, 5, 0));

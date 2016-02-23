@@ -13,8 +13,8 @@
 
   <!-- GXT Theme -->
   <!-- <inherits name='com.sencha.gxt.theme.blue.Blue'/> -->
-  <!-- <inherits name='com.sencha.gxt.theme.gray.Gray' /> -->
-  <inherits name="com.sencha.gxt.theme.neptune.Theme" />
+  <inherits name='com.sencha.gxt.theme.gray.Gray' />
+  <!-- <inherits name="com.sencha.gxt.theme.neptune.Theme" /> -->
 
   <!-- Specify the app entry point class. -->
   <entry-point class='bilokhado.trygxt.client.ProjectEntryPoint' />
