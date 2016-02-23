@@ -3,6 +3,7 @@ package bilokhado.trygxt.client;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.RootPanel;
+import com.sencha.gxt.cell.core.client.ButtonCell.ButtonScale;
 import com.sencha.gxt.core.client.Style.LayoutRegion;
 import com.sencha.gxt.core.client.util.Margins;
 import com.sencha.gxt.widget.core.client.ContentPanel;
@@ -31,9 +32,13 @@ public class ProjectEntryPoint implements EntryPoint {
 
 	    cp = new ContentPanel();
 	    cp.setHeadingText("Navigator");
-	    cp.add(new Label("West Content"));
 	    TextButton textButton = new TextButton("Button1");
+	    textButton.setScale(ButtonScale.SMALL);
 	    cp.add(textButton);
+	    TextButton textButton2 = new TextButton("Button2");
+	    textButton2.setScale(ButtonScale.SMALL);
+	    cp.add(textButton2);
+	    
 	    d = new BorderLayoutData(.20);
 	    d.setMargins(new Margins(0, 5, 5, 5));
 	    d.setCollapsible(true);
